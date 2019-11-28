@@ -1,0 +1,10 @@
+@startuml
+:Main Admin: as Admin
+User --> (Register)
+Admin--> (Register)
+(Register) --> (Submit Details)
+note left of User: This is user
+note right of Admin : This is Admin/ HR
+
+
+@enduml

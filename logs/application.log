@@ -1,0 +1,52 @@
+2019-11-28 10:33:56,315 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [default] initialized at jdbc:mysql://localhost/new_schema
+2019-11-28 10:33:56,335 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2019-11-28 10:33:56,394 [WARN] from com.zaxxer.hikari.util.DriverDataSource in play-dev-mode-akka.actor.default-dispatcher-4 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 10:34:00,375 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-4 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-11-28 10:34:00,402 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2019-11-28 10:34:48,206 [INFO] from application in application-akka.actor.default-dispatcher-2 - 1prabhdeep@gmail.comIndia@123
+2019-11-28 10:34:48,213 [INFO] from application in application-akka.actor.default-dispatcher-2 - prabhdeep@gmail.com1India@123
+2019-11-28 10:46:28,879 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m2s172ms453µs800ns).
+2019-11-28 11:07:11,324 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m42s205ms132µs100ns).
+2019-11-28 11:07:45,310 [INFO] from application in application-akka.actor.default-dispatcher-7 - Shutting down connection pool.
+2019-11-28 11:07:46,055 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-12 - Database [default] initialized at jdbc:mysql://localhost/new_schema
+2019-11-28 11:07:46,056 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-12 - Creating Pool for datasource 'default'
+2019-11-28 11:07:46,059 [WARN] from com.zaxxer.hikari.util.DriverDataSource in play-dev-mode-akka.actor.default-dispatcher-12 - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 11:07:46,332 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-11-28 11:07:46,336 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev) (no global state)
+2019-11-28 11:08:15,378 [INFO] from application in application-akka.actor.default-dispatcher-9 - 10anamicakumari@gmail.comIndia@123
+2019-11-28 11:08:15,382 [INFO] from application in application-akka.actor.default-dispatcher-9 - anamicakumari@gmail.com10India@123
+2019-11-28 11:41:56,506 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 11:41:56,578 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 11:42:01,199 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
+2019-11-28 11:44:25,664 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 11:44:25,743 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 11:44:30,877 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-11-28 12:26:55,338 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 12:26:55,467 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 12:27:35,864 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2019-11-28 12:27:47,187 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 12:27:47,262 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 12:27:52,025 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-11-28 12:32:32,142 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 12:32:37,432 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.
+2019-11-28 12:59:35,848 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 12:59:35,925 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 12:59:42,053 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-11-28 13:00:10,026 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 13:00:10,105 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 13:00:15,514 [INFO] from application in application-akka.actor.default-dispatcher-2 - Shutting down connection pool.
+2019-11-28 13:01:07,243 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 13:01:07,314 [WARN] from com.zaxxer.hikari.util.DriverDataSource in main - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-28 13:01:12,627 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
+2019-11-28 13:02:06,285 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 13:02:11,705 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
+2019-11-28 13:02:35,825 [INFO] from application in main - Creating Pool for datasource 'default'
+2019-11-28 13:02:41,156 [INFO] from application in application-akka.actor.default-dispatcher-3 - Shutting down connection pool.

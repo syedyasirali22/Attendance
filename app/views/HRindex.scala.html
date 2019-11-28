@@ -1,0 +1,35 @@
+@(response: String)
+@main("Welcome to Play") {
+<html>
+<body>
+<div align="center" style="border-style:solid; border-width:1px; margin:10% 35%; background-color:lightgrey">
+    <form method="POST" action="/persondetails" name="persondetails" id="persondetails">
+        <br><br>
+        <h1> Enter your e-mail </h1>
+        <div>Hello (@session.get("sessionemail")),  kindly mark your your attendance by entering your email again</div>
+        <br><br>
+
+
+       <input type="email" name="email"/><br><br>
+        <input type="submit" value="Submit Attendance" style=" align=center"></input>
+        &nbsp&nbsp&nbsp
+        <br><br>
+    </form>
+    <div>@response</div>
+    <br>
+    <div>
+        <input type="button" value="Log-out" style="align=center" onclick="window.location.href = '/logout';">
+        <br><br>
+    </div>
+    <form method="POST" action="/alldetails">
+        <input type="submit" value="Person Details" style="align=center" >
+        <br><br>
+    </form>
+    <form action="/editdetails" method="GET">
+        <input type="submit" value="Edit details"/>
+    </form>
+    <br>
+</div>
+</body>
+</html>
+}

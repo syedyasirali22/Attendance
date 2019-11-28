@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="984ed540-5e33-4724-9051-138c45172596" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Use Case" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1UC1LubzJQ8TXt9HroN6QyB7AyX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultPlantUmlFileTemplate" value="UML Use Case" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../base_project_Anamica/new_project1" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.HomeControllerTest.testIndex">
+    <configuration name="HomeControllerTest.testIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Attendance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controllers" />
+      <option name="MAIN_CLASS_NAME" value="controllers.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="debug" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="9999" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9999" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HomeControllerTest.testIndex" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Attendance" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="root [file:/C:/Syed_Yasir_PlayProject/Attendance/attendance/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="Attendance-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4720844132245" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3229742005" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3724303870" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2676701469" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="C:/Syed_Yasir_All/helloworld" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/new_project/ENTRY" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/new_project/newproject" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/play-samples-play-java-starter-example/play-samples-play-java-starter-example" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/play-samples-play-java-starter-example/untitled/untitled" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/playProjects/Attendance" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/playProjects/helloworld/helloproject" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/playProjects/untitled" value="PREVIEW" />
+        <entry key="C:/Syed_Yasir_All/playProjects/untitled/untitled" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/.." value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../Book/bookproject" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/All/Lal/attendance-management-system" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/Microsoft.SkypeApp_kzf8qxf38zg5c!App/All/attendance-management-system/attendance-management-system" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="984ed540-5e33-4724-9051-138c45172596" name="Default Changelist" comment="" />
+      <created>1574845710639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574845710639</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Error handler deleted">
+      <created>1574922363125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574922363125</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Error handler deleted">
+      <created>1574922522771</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574922522771</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Error handler deleted">
+      <created>1574922697850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574922697850</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Error handler deleted">
+      <created>1574922741064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574922741064</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Error handler deleted">
+      <created>1574922820595</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574922820595</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Error handler deleted">
+      <created>1574928281564</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574928281564</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Error handler deleted">
+      <created>1574937627703</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574937627703</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Error handler deleted">
+      <created>1574947686732</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574947686732</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Error hnasdler deleted" />
+    <MESSAGE value="Error handler deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error handler deleted" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(C:\Syed_Yasir_PlayProject\Attendance\attendance\test\controllers\HomeControllerTest.java)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(controllers.HomeControllerTest)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(controllers.HomeControllerTest)
+[debug] All initially invalidated sources:Set(C:\Syed_Yasir_PlayProject\Attendance\attendance\test\controllers\HomeControllerTest.java)
+[debug] Initial set of included nodes: controllers.HomeControllerTest
+[info] Compiling 1 Java source to C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\test-classes ...
+[debug] Attempting to call com.sun.tools.javac.api.JavacTool@424aef5d directly...
+[debug] Java compilation took 1.5931515 s
+[debug] Java analysis took 0.1786201 s
+[debug] Java compilation + analysis took 1.850596 s
+[info] Done compiling.
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] No classes were invalidated.
