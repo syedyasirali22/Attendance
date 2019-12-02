@@ -20,20 +20,13 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
-//@Security.Authenticated
 public class RegistrationController extends Controller {
-    public Result home(){
+    public Result home() {
         return ok(views.html.home.render());
     }
+
     public Result index() {
         return ok(views.html.register.render(""));
-        ////////////////////////////////////////////////////////////////////////////////////////
-//        if(attendance != null && attendance.size()>0){
-//            for(Attendance attendance_ : attendance){
-//                name = name.concat(attendance_.getEmail()).concat(", ");
-//         }
-//        }
-//        return ok(views.html.register.render(name));
     }
 
     private FormFactory formFactory;
@@ -58,7 +51,7 @@ public class RegistrationController extends Controller {
         if (objects.isEmpty()) {
 
             Person person = new Person();
-            Role role= Role.find.query().where().like("role_id","2").findOne();
+            Role role = Role.find.query().where().like("role_id", "2").findOne();
             person.setName(name);
             person.setEmail(email);
             person.setPassword(password1);

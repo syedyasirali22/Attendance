@@ -1,0 +1,14 @@
+@startuml
+title Registration Sequence Diagram
+Views -> Controllers: Registration Request Created
+activate Controllers
+activate Views
+Controllers -> Views: Response
+Views -> Controllers : Submit Details
+deactivate Views
+activate DB
+Controllers -> DB  : Save Details
+deactivate Controllers
+deactivate DB
+
+@enduml

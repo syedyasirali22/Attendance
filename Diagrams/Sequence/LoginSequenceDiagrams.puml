@@ -1,0 +1,22 @@
+@startuml
+title Login Sequence Diagram
+'Login
+Views -> Controllers : Login Request Created
+activate Controllers
+activate Views
+Controllers -> Views: Response
+Views -> Controllers : Submit Details
+Controllers -> DB : Validate
+activate DB
+DB -> Controllers : Response in cache memory
+Controllers -> Views : Success..! Login Page
+Views -> Controllers : Submit Attendance
+Controllers -> DB : Validate email
+DB -> Controllers : Save Attendance
+deactivate DB
+Controllers -> Views : Attendance Saved
+Views -> Controllers : Logout Request
+Controllers -> Views : Logout Successful
+deactivate Controllers
+deactivate Views
+@enduml

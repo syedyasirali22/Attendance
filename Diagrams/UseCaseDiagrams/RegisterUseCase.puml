@@ -1,10 +1,17 @@
 @startuml
-:Main Admin: as Admin
-User --> (Register)
-Admin--> (Register)
-(Register) --> (Submit Details)
-note left of User: This is user
-note right of Admin : This is Admin/ HR
+'note left of User: This is user
+'note right of Admin : This is Admin/HR
 
+left to right direction
+skinparam packageStyle rectangle
+actor employee
+actor admin
+rectangle Registration {
+  employee --> (Enter details)
+  employee --> (Submit details)
+  (Enter details) .> (Submit details) : Validating Enteries
 
+  (Enter details) <-- admin
+  admin --> (Submit details)
+}
 @enduml

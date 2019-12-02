@@ -1,30 +1,26 @@
 package models;
+
 import akka.actor.ProviderSelection;
 import io.ebean.Finder;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
 
 @Entity(name = "attendance")
 public class Attendance {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="id")
+    @Column(name = "id")
     private Integer id;
-
-//    @Column(name="email")
-//    private String email;
 
     @Column(name = "check_in", columnDefinition = "DATETIME")
     private LocalDateTime checkIn;
-    @Column(name="check_out", columnDefinition = "DATETIME")
+    @Column(name = "check_out", columnDefinition = "DATETIME")
     private LocalDateTime checkOut;
 
     @ManyToOne(cascade = CascadeType.ALL)
     private Person person;
-  //  @JoinColumn(name="id",referencedColumnName = "id")
+    //  @JoinColumn(name="id",referencedColumnName = "id")
 
 
     public Integer getId() {
@@ -34,8 +30,6 @@ public class Attendance {
     public void setId(Integer id) {
         this.id = id;
     }
-
-
 
 
     public LocalDateTime getCheckIn() {
@@ -78,4 +72,4 @@ public class Attendance {
 //                ", checkOut=" + checkOut +
 //                '}';}
 
-    }
+}

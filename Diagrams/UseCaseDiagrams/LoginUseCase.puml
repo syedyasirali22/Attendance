@@ -1,12 +1,56 @@
 @startuml
+left to right direction
+skinparam packageStyle rectangle
+actor employee
+actor admin
+rectangle Login {
+
+(Login) .> (Submit Attendance) : After Validating
+'(Submit Attendance) .> (View All Employee Attendance) : OR
+
+  (Login) <--employee
+  admin --> (Login)
+
+  employee --> (Submit Attendance)
+  admin --> (Submit Attendance)
+
+ admin --> (View All attendance)
+'  employee --> (Edit Name)
+'    admin --> (Edit Name)
+
+'    employee --> (Change Password)
+'    admin --> (Change Password)
+   }
 'Alice-->Bob: Authentication Request
 'Bob-->Alice: Authentication Response
 
-:Main Admin: as Admin
-User --> (Register)
-Admin--> (Register)
-(Register) --> (Submit Details)
-note left of User: This is user
-note right of Admin : This is Admin
+'digraph G {
+'    "User" [shapefile="stick.png"];
+'    "Log In" [shape=ellipse];
+'    "User"->"Log In" [arrowhead=none]
+'}
+'digraph first {
+'a->b;
+'node [shape=box];a;c;d;e;
+'node [shape=ellipse];f;g;h;i;j;k;l;
+'a ->j;
+'a->g [label="20"];
+'b->f;
+'f->h;
+'g->d;
+'f->d;
+'c->e;
+'e->d->i [dir=none] ;
+'}
+'left to right direction
+'skinparam packageStyle rectangle
+'actor customer
+'actor clerk
+'rectangle checkout {
+'  employee -- (checkout)
+'  (checkout) .> (payment) : include
+'  (help) .> (checkout) : extends
+'  (checkout) -- admin
+'}
 
 @enduml

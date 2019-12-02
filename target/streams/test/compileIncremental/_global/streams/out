@@ -16,10 +16,10 @@
 [debug] All initially invalidated sources:Set(C:\Syed_Yasir_PlayProject\Attendance\attendance\test\controllers\HomeControllerTest.java)
 [debug] Initial set of included nodes: controllers.HomeControllerTest
 [info] Compiling 1 Java source to C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\test-classes ...
-[debug] Attempting to call com.sun.tools.javac.api.JavacTool@424aef5d directly...
-[debug] Java compilation took 1.5931515 s
-[debug] Java analysis took 0.1786201 s
-[debug] Java compilation + analysis took 1.850596 s
+[debug] Attempting to call com.sun.tools.javac.api.JavacTool@5706c686 directly...
+[debug] Java compilation took 2.4872243 s
+[debug] Java analysis took 0.2322473 s
+[debug] Java compilation + analysis took 2.8233387 s
 [info] Done compiling.
 [debug] New invalidations:
 [debug] 	Set()
