@@ -34,35 +34,66 @@ Seq[Any](format.raw/*1.20*/("""
 """),_display_(/*2.2*/main("Welcome to Nexxo Login page")/*2.37*/ {_display_(Seq[Any](format.raw/*2.39*/("""
 """),format.raw/*3.1*/("""<html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<h1 style="border-style:solid;color:black;text-align:center;border-width:1px; margin: 5% 35% 2% 35%;background-color:grey;color:white">Login Here</h1>
-<div align="center" style="border-style:solid; border-width:1px; margin: 2% 35% 20% 35%; background-color:lightgrey">
-    <form method="POST" action="/login" name="registration" id="registration">
-        <br><br>
-        <h2> Enter your Details </h2>
-        Enter your email: &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp <input type="text" name="email"/><br><br>
-        Enter password: &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp <input type="password" name="password"/><br><br>
-        <input type="submit" value="Login" style="align:center"></input>
-        &nbsp&nbsp&nbsp
-        <br><br>
-        <div>"""),_display_(/*17.15*/response),format.raw/*17.23*/("""</div>
+<div class="container-fluid">
+    <h1 style="color:black;text-align:center; margin: 5% 35% 0% 35%;background-color:Black;color:white">Login Here</h1>
+    <div  style="margin: 0% 35% 20% 35%; background-color:lightgrey">
+        <form method="POST" action="/login" name="registration" id="registration">
+            <br>
+
+            <div class="form-group"  style=" margin:5%">
+                <label for="email">Enter your email:</label>
+                <input type="text" class="form-control" id="email"  name="email" />
+            </div>
+
+            <div class="form-group"  style=" margin:5%">
+                <label for="email">Enter password:</label>
+                <input type="password" class="form-control" id="password"   name="password" />
+            </div>
+
+            <br>
+            <div align="center">
+
+            <input type="submit" value="Login" style="align:center" class="btn btn-success"></input><br><br>
+            </div>
+
+        </form>
+
+        <div align="center">
+            <form action="/register" method="GET" >
+                <input type="submit" value="Register here, if unregistered" class="btn btn-success" >
+                <div>"""),_display_(/*41.23*/response),format.raw/*41.31*/("""</div>
+                <br>
+            </form>
+
+            <form action="/forgotpassword" method="GET" >
+                <input type="submit" value="Forgot Password" class="btn btn-success" >
+                <div>"""),_display_(/*47.23*/response),format.raw/*47.31*/("""</div>
+                <br>
+            </form>
+
+
+            <!--        <a href="/forgotpassword"  >Forgot Password</a>-->
+
+        </div>
         <br>
 
-    </form>
-    <form action="/register" method="GET" >
-        <input type="submit" value="Register here, if not registered" style="align:center">
-        <br><br>
-    </form>
-    <a href="/forgotpassword"  >Forgot Password</a>
-
+    </div>
 
 
 </div>
+
 </body>
 </html>
-""")))}),format.raw/*32.2*/("""
-"""))
+""")))}))
       }
     }
   }
@@ -78,11 +109,11 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-02T14:33:35.938
+                  DATE: 2019-12-03T18:57:08.396
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/login.scala.html
-                  HASH: 35f854b9710be77ae1a24e2d8d8b78f73089e33d
-                  MATRIX: 948->1|1061->19|1089->22|1132->57|1171->59|1199->61|2015->850|2044->858|2366->1150
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|49->17|49->17|64->32
+                  HASH: 1179a625423a00e641abc224a070617f95cb9f6a
+                  MATRIX: 948->1|1061->19|1089->22|1132->57|1171->59|1199->61|2966->1801|2995->1809|3244->2031|3273->2039
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|73->41|73->41|79->47|79->47
                   -- GENERATED --
               */
           

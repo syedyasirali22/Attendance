@@ -1,2 +1,7 @@
-[debug] Acquiring lock on file C:\Syed_Yasir_PlayProject\Attendance\attendance\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock ...
-[debug] Releasing lock on file C:\Syed_Yasir_PlayProject\Attendance\attendance\project\target\.sbt-compilation-infos\root-compile\.sbt-idea-lock.
+[0m[[0m[33mwarn[0m] [0m[0mC:\Syed_Yasir_PlayProject\Attendance\attendance\app\views\HRindex.scala.html:20:34: method get in class Session is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m            <div>Hello (@session.get("sessionemail")) !!!</div>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Syed_Yasir_PlayProject\Attendance\attendance\app\views\HRindex.scala.html:20:26: method session in class Implicit is deprecated: see corresponding Javadoc for more information.[0m
+[0m[[0m[33mwarn[0m] [0m[0m            <div>Hello (@session.get("sessionemail")) !!!</div>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

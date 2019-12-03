@@ -1,6 +1,6 @@
 package controllers;
 
-import dao.DbConnector;
+import dao.*;
 import dto.ApplicationForm;
 import dto.PasswordForm;
 import dto.PersonAttendance;
@@ -8,8 +8,7 @@ import io.ebean.Expr;
 import io.ebean.SqlRow;
 import io.ebean.SqlUpdate;
 import jdk.nashorn.internal.runtime.Context;
-import models.Attendance;
-import models.Person;
+import models.*;
 import play.Logger;
 import play.cache.SyncCacheApi;
 import play.data.Form;

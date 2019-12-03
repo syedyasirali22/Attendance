@@ -34,42 +34,82 @@ Seq[Any](format.raw/*1.20*/("""
 """),_display_(/*2.2*/main("Welcome to Nexxo Registration page")/*2.44*/ {_display_(Seq[Any](format.raw/*2.46*/("""
 """),format.raw/*3.1*/("""<html>
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div align="center" style="border-style:solid; border-width:1px; margin:5% 35% 20% 35%; background-color:lightgrey">
-  <form method="POST" action="/register/login" name="registrationForm" id="registrationForm">
-    <br><br>
-    <h1> Registration </h1>
-    Enter Name &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp <input type="name" name="name" pattern="([^\s][A-z\s]+)" title="Should contain only alphabatical characters and there should be no open space at the start"/><br><br>
-    Enter Email &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp <input type="email" name="email" title="Enter e-mail"/><br><br>
-    Enter Password &nbsp &nbsp &nbsp &nbsp &nbsp<input type="password" name="password1" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])."""),format.raw/*13.144*/("""{"""),format.raw/*13.145*/("""8,"""),format.raw/*13.147*/("""}"""),format.raw/*13.148*/("""" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/><br><br>
-    Confirm  Password &nbsp &nbsp &nbsp<input type="password" name="password2" title="confirm-password" id="password2" oninput="check(this)" /><br><br>
-   <br><br>
-    <input type="submit"  value="Register me" ></input>
+<div  style="border-style:solid; border-width:1px; margin:5% 35% 20% 35%; background-color:lightgrey">
 
-    &nbsp&nbsp&nbsp
-    <br><br>
-      <script language='javascript' type='text/javascript'>
-    function check(input) """),format.raw/*21.27*/("""{"""),format.raw/*21.28*/("""
-        """),format.raw/*22.9*/("""if (input.value != document.getElementById('password1').value) """),format.raw/*22.72*/("""{"""),format.raw/*22.73*/("""
-            """),format.raw/*23.13*/("""input.setCustomValidity('Password Must be Matching.');
-        """),format.raw/*24.9*/("""}"""),format.raw/*24.10*/(""" """),format.raw/*24.11*/("""else """),format.raw/*24.16*/("""{"""),format.raw/*24.17*/("""
-"""),format.raw/*25.1*/("""<!--            input is valid &#45;&#45; reset the error message-->
-            input.setCustomValidity('');
-        """),format.raw/*27.9*/("""}"""),format.raw/*27.10*/("""
-    """),format.raw/*28.5*/("""}"""),format.raw/*28.6*/("""
-"""),format.raw/*29.1*/("""</script>
-  </form>
-  <div>"""),_display_(/*31.9*/response),format.raw/*31.17*/("""</div>
-    <br>
-  <form action="/login" method="GET" >
-    <input type="submit" value="Login if already registered" style="align:center">
-    <br><br>
-  </form>
+    <form method="POST" action="/register/login" name="registrationForm" id="registrationForm">
+        <br>
+
+        <div align="center">
+            <h1> Registration </h1>
+        </div>
+
+
+        <div class="form-group"  style=" margin:5%">
+            <label for="name">Enter Name :</label>
+            <input type="name" class="form-control" id="name"  name="name" pattern="([^\s][A-z\s]+)" title="Should contain only alphabatical characters and there should be no open space at the start" />
+        </div>
+
+        <div class="form-group"  style=" margin:5%">
+            <label for="email">Enter email:</label>
+            <input type="email" class="form-control" id="email"  name="email" title="Enter e-mail"/>
+        </div>
+
+        <div class="form-group"  style=" margin:5%">
+            <label for="password1">Enter Password:</label>
+            <input type="password" class="form-control" id="password1"  name="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])."""),format.raw/*35.130*/("""{"""),format.raw/*35.131*/("""8,"""),format.raw/*35.133*/("""}"""),format.raw/*35.134*/("""" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/>
+        </div>
+
+        <div class="form-group"  style=" margin:5%">
+            <label for="email">Confirm  Password:</label>
+            <input type="password" class="form-control" id="password2"  name="password2" oninput="check(this)" title="confirm-password"/>
+        </div>   <br>
+
+
+        <div align="center">
+            <input type="submit"  value="Register me"   class="btn btn-success"></input>
+            <br>
+        </div>
+
+    </form>
+
+
+    <div align="center">
+        <div>"""),_display_(/*53.15*/response),format.raw/*53.23*/("""</div>    <br>
+        <form action="/login" method="GET" >
+            <input type="submit" value="Login if already registered" class="btn btn-success">
+            <br><br>
+        </form>
+    </div>
+
+
 </div>
+
+
+
+
+<script language='javascript' type='text/javascript'>
+    function check(input) """),format.raw/*67.27*/("""{"""),format.raw/*67.28*/("""
+        """),format.raw/*68.9*/("""if (input.value != document.getElementById('password1').value) """),format.raw/*68.72*/("""{"""),format.raw/*68.73*/("""
+            """),format.raw/*69.13*/("""input.setCustomValidity('Password Must be Matching.');
+        """),format.raw/*70.9*/("""}"""),format.raw/*70.10*/(""" """),format.raw/*70.11*/("""else """),format.raw/*70.16*/("""{"""),format.raw/*70.17*/("""
+"""),format.raw/*71.1*/("""<!--            input is valid &#45;&#45; reset the error message-->
+            input.setCustomValidity('');
+        """),format.raw/*73.9*/("""}"""),format.raw/*73.10*/("""
+    """),format.raw/*74.5*/("""}"""),format.raw/*74.6*/("""
+"""),format.raw/*75.1*/("""</script>
 </body>
 </html>
-""")))}),format.raw/*40.2*/("""
+""")))}),format.raw/*78.2*/("""
+
+
 """))
       }
     }
@@ -86,11 +126,11 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-02T14:33:36.079
+                  DATE: 2019-12-03T18:46:07.849
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/register.scala.html
-                  HASH: edd5cc6c9d8e89e5b640bca46a8c5b7fd93682b7
-                  MATRIX: 951->1|1064->19|1092->22|1142->64|1181->66|1209->68|2033->863|2063->864|2094->866|2124->867|2627->1342|2656->1343|2693->1353|2784->1416|2813->1417|2855->1431|2946->1495|2975->1496|3004->1497|3037->1502|3066->1503|3095->1505|3242->1625|3271->1626|3304->1632|3332->1633|3361->1635|3417->1665|3446->1673|3670->1867
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|45->13|45->13|45->13|45->13|53->21|53->21|54->22|54->22|54->22|55->23|56->24|56->24|56->24|56->24|56->24|57->25|59->27|59->27|60->28|60->28|61->29|63->31|63->31|72->40
+                  HASH: ade2ba5394641ae5ce1445c7abb947898fe4bac7
+                  MATRIX: 951->1|1064->19|1092->22|1142->64|1181->66|1209->68|2877->1707|2907->1708|2938->1710|2968->1711|3625->2341|3654->2349|3991->2658|4020->2659|4057->2669|4148->2732|4177->2733|4219->2747|4310->2811|4339->2812|4368->2813|4401->2818|4430->2819|4459->2821|4606->2941|4635->2942|4668->2948|4696->2949|4725->2951|4785->2981
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|67->35|67->35|67->35|67->35|85->53|85->53|99->67|99->67|100->68|100->68|100->68|101->69|102->70|102->70|102->70|102->70|102->70|103->71|105->73|105->73|106->74|106->74|107->75|110->78
                   -- GENERATED --
               */
           

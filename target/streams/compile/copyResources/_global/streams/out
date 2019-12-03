@@ -1,5 +1,5 @@
-[debug] Copy resource mappings: 
-[debug] 	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\application.conf,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\application.conf)
-[debug] 	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\logback.xml,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\logback.xml)
-[debug] 	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\routes,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\routes)
-[debug] 	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\evolutions\default\1.sql,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\evolutions\default\1.sql)
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\application.conf,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\logback.xml,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\routes,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Syed_Yasir_PlayProject\Attendance\attendance\conf\evolutions\default\1.sql,C:\Syed_Yasir_PlayProject\Attendance\attendance\target\scala-2.13\classes\evolutions\default\1.sql)[0m

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Syed_Yasir_PlayProject/Attendance/attendance/conf/routes
-// @DATE:Mon Dec 02 14:33:33 IST 2019
+// @DATE:Tue Dec 03 18:36:34 IST 2019
 
 
 package router {

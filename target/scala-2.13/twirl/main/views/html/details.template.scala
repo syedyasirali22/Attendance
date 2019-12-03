@@ -33,27 +33,38 @@ object details extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Ht
 Seq[Any](format.raw/*1.42*/("""
 """),_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](format.raw/*2.27*/("""
 """),format.raw/*3.1*/("""<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 <body>
+<div class="container">
+    <div class="container-fluid"   align="center" style="border-style:solid; border-width:1px; margin:10% auto; width:701px; background-color:lightgrey">
 
-<div align="center" style="border-style:solid; border-width:1px; margin:10% auto; width:701px; background-color:lightgrey">
-
-    <h1>Hi Admin </h1>
-    <h2> Please find the details of Attendance here</h2>
-    <br>
-    <table>
-        <tr><th> ID </th><th> &nbsp &nbsp Name</th><th> &nbsp &nbsp Check-in Time</th><th> Check-out Time</th></tr>
-        """),_display_(/*13.10*/for(n <- attendance) yield /*13.30*/{_display_(Seq[Any](format.raw/*13.31*/("""
-        """),format.raw/*14.9*/("""<tr><td> """),_display_(/*14.19*/n/*14.20*/.getId),format.raw/*14.26*/("""</td>  <td> """),_display_(/*14.39*/n/*14.40*/.getName),format.raw/*14.48*/("""</td>  <td>&nbsp &nbsp &nbsp &nbsp """),_display_(/*14.84*/n/*14.85*/.getCheckIn),format.raw/*14.96*/("""</td>  <td>&nbsp &nbsp &nbsp &nbsp """),_display_(/*14.132*/n/*14.133*/.getCheckOut),format.raw/*14.145*/("""</td></tr>
-        """)))}),format.raw/*15.10*/("""
-    """),format.raw/*16.5*/("""</table>
-    <div>
-        <input type="button" value="Return to previous page" style="align=center" onclick="window.location.href = '/persondetails';">
-        <br><br>
+        <h1>Hi Admin </h1>
+        <h2> Please find the details of Attendance here</h2>
+        <br>
+        <table class="table">
+            <thead class="thead-dark">
+            <tr ><th > ID </th><th> Name </th><th> &nbsp &nbsp &nbsp Check-in Time</th><th> &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCheck-out Time</th></tr>
+            <thead class="thead-dark">
+            """),_display_(/*23.14*/for(n <- attendance) yield /*23.34*/{_display_(Seq[Any](format.raw/*23.35*/("""
+            """),format.raw/*24.13*/("""<tr><td> """),_display_(/*24.23*/n/*24.24*/.getId),format.raw/*24.30*/("""</td> <td> """),_display_(/*24.42*/n/*24.43*/.getName),format.raw/*24.51*/("""</td>   <td>  &nbsp """),_display_(/*24.72*/n/*24.73*/.getCheckIn),format.raw/*24.84*/("""</td>  <td>&nbsp &nbsp &nbsp """),_display_(/*24.114*/n/*24.115*/.getCheckOut),format.raw/*24.127*/("""</td></tr>
+            """)))}),format.raw/*25.14*/("""
+        """),format.raw/*26.9*/("""</table>
+        <div>
+            <input type="button" value="Return to previous page" class="btn btn-success" onclick="window.location.href = '/login';">
+            <br><br>
+        </div>
     </div>
 </div>
 </body>
 </html>
-""")))}),format.raw/*24.2*/("""
+""")))}),format.raw/*35.2*/("""
 """))
       }
     }
@@ -70,11 +81,11 @@ Seq[Any](format.raw/*1.42*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-02T14:33:33.978
+                  DATE: 2019-12-03T19:21:24.919
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/details.scala.html
-                  HASH: 1c0860cb95a1181d22fe5c777ddf8569f56b9876
-                  MATRIX: 970->1|1105->41|1133->44|1164->67|1203->69|1231->71|1634->447|1670->467|1709->468|1746->478|1783->488|1793->489|1820->495|1860->508|1870->509|1899->517|1962->553|1972->554|2004->565|2068->601|2079->602|2113->614|2165->635|2198->641|2441->854
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|45->13|45->13|45->13|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|46->14|47->15|48->16|56->24
+                  HASH: adbb572c747f6eb4d6001b9996f5e928dc672c25
+                  MATRIX: 970->1|1105->41|1133->44|1164->67|1203->69|1231->71|2362->1175|2398->1195|2437->1196|2479->1210|2516->1220|2526->1221|2553->1227|2592->1239|2602->1240|2631->1248|2679->1269|2689->1270|2721->1281|2779->1311|2790->1312|2824->1324|2880->1349|2917->1359|3183->1595
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|55->23|55->23|55->23|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|57->25|58->26|67->35
                   -- GENERATED --
               */
           

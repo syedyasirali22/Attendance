@@ -33,38 +33,55 @@ object HRindex extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.Ht
 Seq[Any](format.raw/*1.20*/("""
 """),_display_(/*2.2*/main("Welcome to Play")/*2.25*/ {_display_(Seq[Any](format.raw/*2.27*/("""
 """),format.raw/*3.1*/("""<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
 <body>
-<div align="center" style="border-style:solid; border-width:1px; margin:10% 35%; background-color:lightgrey">
-    <form method="POST" action="/persondetails" name="persondetails" id="persondetails">
-        <br><br>
-        <h1> Enter your e-mail </h1>
-        <div>Hello ("""),_display_(/*9.22*/session/*9.29*/.get("sessionemail")),format.raw/*9.49*/("""),  kindly mark your your attendance by entering your email again</div>
-        <br><br>
+<div class="container-fluid">
+    <div align="center" style="border-style:solid; border-width:1px; margin:10% 35%; background-color:lightgrey">
+        <form method="POST" action="/persondetails" name="persondetails" id="persondetails">
+            <br>
+            <h1> Enter your e-mail </h1><br>
+            <div>Hello ("""),_display_(/*20.26*/session/*20.33*/.get("sessionemail")),format.raw/*20.53*/(""") !!!</div>
 
+            <div class="form-group" style=" margin:5%">
+                <label for="email"> Kindly mark your your attendance by entering your email again</label>
+                <input type="text" class="form-control" id="email" name="email" pattern="([0-9]"/>
+            </div>
 
-       <input type="email" name="email"/><br><br>
-        <input type="submit" value="Submit Attendance" style=" align=center"></input>
-        &nbsp&nbsp&nbsp
-        <br><br>
-    </form>
-    <div>"""),_display_(/*18.11*/response),format.raw/*18.19*/("""</div>
-    <br>
-    <div>
-        <input type="button" value="Log-out" style="align=center" onclick="window.location.href = '/logout';">
-        <br><br>
+            <input type="submit" value="Submit Attendance" class="btn btn-success"></input>
+            &nbsp&nbsp&nbsp
+            <br>
+        </form>
+        <div>"""),_display_(/*31.15*/response),format.raw/*31.23*/("""</div>
+        <br>
+
+        <div>
+            <form method="POST" action="/logout">
+                <input type="button" value="Log-out" class="btn btn-success" onclick="window.location.href = '/logout';">
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+
+        <form method="POST" action="/alldetails">
+            <input type="submit" value="Person Details" class="btn btn-success" >
+            <br><br>
+        </form>
+
     </div>
-    <form method="POST" action="/alldetails">
-        <input type="submit" value="Person Details" style="align=center" >
-        <br><br>
-    </form>
-    <form action="/editdetails" method="GET">
-        <input type="submit" value="Edit details"/>
-    </form>
-    <br>
 </div>
 </body>
 </html>
-""")))}),format.raw/*35.2*/("""
+""")))}),format.raw/*52.2*/("""
 """))
       }
     }
@@ -81,11 +98,11 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-02T14:33:35.789
+                  DATE: 2019-12-03T19:03:30.371
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/HRindex.scala.html
-                  HASH: 15fee05d5dd60f0835b14971eab8e9ec748e399f
-                  MATRIX: 950->1|1063->19|1091->22|1122->45|1161->47|1189->49|1509->343|1524->350|1564->370|1890->669|1919->677|2424->1152
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|41->9|41->9|41->9|50->18|50->18|67->35
+                  HASH: 3c7f064224a1ebcdfd9b26de048d67e391bbc39a
+                  MATRIX: 950->1|1063->19|1091->22|1122->45|1161->47|1189->49|2084->917|2100->924|2141->944|2640->1416|2669->1424|3231->1956
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|52->20|52->20|52->20|63->31|63->31|84->52
                   -- GENERATED --
               */
           

@@ -1,5 +1,6 @@
 package dto;
 
+import org.springframework.util.StringUtils;
 import play.data.validation.Constraints;
 import play.data.validation.Constraints.Validatable;
 import play.data.validation.Constraints.Validate;
@@ -15,8 +16,8 @@ public class RegistrationForm implements Validatable<String>
 
     @Override
     public String validate() {
-        if (email == null || name == null || password1==null ||password2==null) {
-            return "Invalid email or password";
+        if (StringUtils.isEmpty(email) || StringUtils.isEmpty(name) || StringUtils.isEmpty(password1) || StringUtils.isEmpty(password2)) {
+            return "Invalid details";
         }
         return null;
     }

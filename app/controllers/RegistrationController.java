@@ -1,11 +1,9 @@
 package controllers;
 
-import dao.DbConnector;
-import dto.RegistrationForm;
+import dao.*;
+import dto.*;
 import io.ebean.*;
-import models.Attendance;
-import models.Person;
-import models.Role;
+import models.*;
 import play.Logger;
 import play.data.Form;
 import play.data.FormFactory;
