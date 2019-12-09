@@ -70,6 +70,24 @@ create table person (
   constraint pk_person primary key (pid)
 );
 
+create table play_store_data (
+  id                            integer auto_increment not null,
+  app                           varchar(255),
+  category                      varchar(255),
+  rating                        varchar(255),
+  reviews                       varchar(255),
+  size                          varchar(255),
+  installs                      integer,
+  type                          varchar(255),
+  price                         varchar(255),
+  contentrating                 varchar(255),
+  genres                        varchar(255),
+  lastupdated                   varchar(255),
+  currentver                    varchar(255),
+  androidver                    varchar(255),
+  constraint pk_play_store_data primary key (id)
+);
+
 create table role (
   id                            integer auto_increment not null,
   role                          varchar(255),
@@ -94,6 +112,8 @@ drop index ix_person_role_id on person;
 drop table if exists attendance;
 
 drop table if exists person;
+
+drop table if exists play_store_data;
 
 drop table if exists role;
 

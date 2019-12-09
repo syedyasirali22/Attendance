@@ -40,34 +40,24 @@ Seq[Any](format.raw/*1.20*/("""
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </head>
 <body>
 <div class="container-fluid">
     <div align="center" style="border-style:solid; border-width:1px; margin:5% 35%; background-color:lightgrey">
         <form method="POST" action="/attendance" name="myForm" id="myForm">
             <h1> Enter your e-mail </h1>
-            <div>Hello ("""),_display_(/*18.26*/session/*18.33*/.get("sessionemail")),format.raw/*18.53*/("""), </div>
+            <div>Hello ("""),_display_(/*17.26*/session/*17.33*/.get("sessionemail")),format.raw/*17.53*/("""), </div>
             <br>
-
-
             <div class="form-group" style=" margin:5%">
                 <label for="email">  kindly mark your your attendance by entering your email again</label>
                 <input type="text" class="form-control" id="email" name="email" pattern="([0-9]"/>
             </div>
-
-
-            <input type="submit" value="Submit Attendance" class="btn btn-success"></input>
+           <input type="submit" value="Submit Attendance" class="btn btn-success"></input>
             &nbsp&nbsp&nbsp
             <br><br>
         </form>
-        <div>"""),_display_(/*32.15*/response),format.raw/*32.23*/("""</div>
+        <div>"""),_display_(/*27.15*/response),format.raw/*27.23*/("""</div>
         <br>
-        <!--    <br>-->
-        <!--    <form method="POST" action="/singledetails">-->
-        <!--        <input type="submit" value="see your attendance details here" style="align=center" >-->
-        <!--        <br><br>-->
-        <!--    </form>-->
         <div>
             <input type="button" value="Log-out" class="btn btn-success" onclick="window.location.href = '/logout';">
             <br><br>
@@ -77,7 +67,7 @@ Seq[Any](format.raw/*1.20*/("""
 </div>
 </body>
 </html>
-""")))}),format.raw/*48.2*/("""
+""")))}),format.raw/*38.2*/("""
 """))
       }
     }
@@ -94,11 +84,11 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-03T18:58:32.155
+                  DATE: 2019-12-09T17:48:29.954
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/index.scala.html
-                  HASH: fdc0f8f53ebcefd3db4d05da85e6b3eac8d5355c
-                  MATRIX: 948->1|1061->19|1089->22|1120->45|1159->47|1187->49|2040->875|2056->882|2097->902|2621->1399|2650->1407|3175->1902
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|50->18|50->18|50->18|64->32|64->32|80->48
+                  HASH: 136805db1ce9ad6cde0e74dccfdb5ccd4e474384
+                  MATRIX: 948->1|1061->19|1089->22|1120->45|1159->47|1187->49|2038->873|2054->880|2095->900|2610->1388|2639->1396|2904->1631
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|49->17|49->17|49->17|59->27|59->27|70->38
                   -- GENERATED --
               */
           

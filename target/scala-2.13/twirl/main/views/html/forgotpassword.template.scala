@@ -36,39 +36,40 @@ Seq[Any](format.raw/*1.20*/("""
 <head>
 </head>
 <body>
+<br>
+
 <h1 style="border-style:solid;color:black;text-align:center;border-width:1px; margin: 5% 35% 2% 35%;background-color:grey;color:white">Enter details</h1>
 <div align="center" style="border-style:solid; border-width:1px; margin: 2% 35% 20% 35%; background-color:lightgrey">
     <form method="POST" action="/getpassword" name="getpassword" id="getpassword">
         <br><br>
-        <h2> Enter your Details </h2>
 
         Enter your email: &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp <input type="email" name="email" /><br><br>
         Enter your ID: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp <input type="text" name="pid" pattern="([0-9]"/><br><br>
         Enter your name: &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp <input type="text" name="name" pattern="([^\s][A-z\s]+)" title="Should be same as entered at registration time and contain only alphabatical characters and there should be no open space at the start"/><br><br>
 
-        Set New Password: &nbsp &nbsp   &nbsp&nbsp&nbsp&nbsp <input type="password" name="password1" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])."""),format.raw/*17.157*/("""{"""),format.raw/*17.158*/("""8,"""),format.raw/*17.160*/("""}"""),format.raw/*17.161*/("""" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/><br><br>
+        Set New Password: &nbsp &nbsp   &nbsp&nbsp&nbsp&nbsp <input type="password" name="password1" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])."""),format.raw/*18.157*/("""{"""),format.raw/*18.158*/("""8,"""),format.raw/*18.160*/("""}"""),format.raw/*18.161*/("""" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"/><br><br>
         Confirm New Password:  &nbsp  <input type="password" name="password2" id="password2" oninput="check(this)" /><br><br>
 
         <input type="submit" value="submit details" style="align:center"></input>
         &nbsp&nbsp&nbsp
         <br><br>
-        <div>"""),_display_(/*23.15*/response),format.raw/*23.23*/("""</div>
+        <div>"""),_display_(/*24.15*/response),format.raw/*24.23*/("""</div>
         <br>
         <script language='javascript' type='text/javascript'>
-    function check(input) """),format.raw/*26.27*/("""{"""),format.raw/*26.28*/("""
-        """),format.raw/*27.9*/("""if (input.value != document.getElementById('password1').value) """),format.raw/*27.72*/("""{"""),format.raw/*27.73*/("""
-            """),format.raw/*28.13*/("""input.setCustomValidity('Password Must be Matching.');
-        """),format.raw/*29.9*/("""}"""),format.raw/*29.10*/(""" """),format.raw/*29.11*/("""else """),format.raw/*29.16*/("""{"""),format.raw/*29.17*/("""
-"""),format.raw/*30.1*/("""<!--            input is valid &#45;&#45; reset the error message-->
+    function check(input) """),format.raw/*27.27*/("""{"""),format.raw/*27.28*/("""
+        """),format.raw/*28.9*/("""if (input.value != document.getElementById('password1').value) """),format.raw/*28.72*/("""{"""),format.raw/*28.73*/("""
+            """),format.raw/*29.13*/("""input.setCustomValidity('Password Must be Matching.');
+        """),format.raw/*30.9*/("""}"""),format.raw/*30.10*/(""" """),format.raw/*30.11*/("""else """),format.raw/*30.16*/("""{"""),format.raw/*30.17*/("""
+"""),format.raw/*31.1*/("""<!--            input is valid &#45;&#45; reset the error message-->
             input.setCustomValidity('');
-        """),format.raw/*32.9*/("""}"""),format.raw/*32.10*/("""
-    """),format.raw/*33.5*/("""}"""),format.raw/*33.6*/("""
-"""),format.raw/*34.1*/("""</script>
+        """),format.raw/*33.9*/("""}"""),format.raw/*33.10*/("""
+    """),format.raw/*34.5*/("""}"""),format.raw/*34.6*/("""
+"""),format.raw/*35.1*/("""</script>
     </form>
 </div>
 </body>
 </html>
-""")))}),format.raw/*39.2*/("""
+""")))}),format.raw/*40.2*/("""
 """))
       }
     }
@@ -85,11 +86,11 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-03T18:36:35.895
+                  DATE: 2019-12-09T17:48:28.099
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/forgotpassword.scala.html
-                  HASH: 6d6f873d0d68d7f8358555d4d85d815cceebf2c4
-                  MATRIX: 957->1|1070->19|1098->22|1141->57|1180->59|1208->61|2359->1183|2389->1184|2420->1186|2450->1187|2874->1584|2903->1592|3042->1703|3071->1704|3108->1714|3199->1777|3228->1778|3270->1792|3361->1856|3390->1857|3419->1858|3452->1863|3481->1864|3510->1866|3657->1986|3686->1987|3719->1993|3747->1994|3776->1996|3857->2047
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|49->17|49->17|49->17|49->17|55->23|55->23|58->26|58->26|59->27|59->27|59->27|60->28|61->29|61->29|61->29|61->29|61->29|62->30|64->32|64->32|65->33|65->33|66->34|71->39
+                  HASH: 53e980bd3000c05d7b52086aca9b3c766eff35ac
+                  MATRIX: 957->1|1070->19|1098->22|1141->57|1180->59|1208->61|2328->1152|2358->1153|2389->1155|2419->1156|2843->1553|2872->1561|3011->1672|3040->1673|3077->1683|3168->1746|3197->1747|3239->1761|3330->1825|3359->1826|3388->1827|3421->1832|3450->1833|3479->1835|3626->1955|3655->1956|3688->1962|3716->1963|3745->1965|3826->2016
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|50->18|50->18|50->18|50->18|56->24|56->24|59->27|59->27|60->28|60->28|60->28|61->29|62->30|62->30|62->30|62->30|62->30|63->31|65->33|65->33|66->34|66->34|67->35|72->40
                   -- GENERATED --
               */
           

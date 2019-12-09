@@ -345,3 +345,29 @@ run
 clean
 compile
 run
+clean
+compile
+run
+clean
+compile
+run
+clean
+compile
+run
+clean
+compile
+run
+sbt -jvm-debug 9999
+ -jvm-debug 9999
+exit
+sbt -jvm-debug 9999
+clean
+compile
+run
+clean
+compile
+run
+clean
+compile
+run
+exit

@@ -30,6 +30,23 @@ public class HomeControllerTest extends WithApplication {
         assertEquals(303, result.status());  //303 is the default HTTP code for  Redirect
     }
 
+//    @Test
+//    public void testIndexGET() {
+//        Http.RequestBuilder request = new Http.RequestBuilder()
+//                .method(GET)
+//                .uri("/attendance");
+//        Result result = route(app, request);
+//        assertEquals(OK, result.status());  //303 is the default HTTP code for  Redirect
+//    }
+//
+//    @Test
+//    public void testIndexPOST() {
+//        Http.RequestBuilder request = new Http.RequestBuilder()
+//                .method(POST)
+//                .uri("/atttendance");
+//        Result result = route(app, request);
+//        assertEquals(OK, result.status());  //303 is the default HTTP code for  Redirect
+//    }
 
 
 

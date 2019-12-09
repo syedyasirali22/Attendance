@@ -1,0 +1,177 @@
+@(topdata: List[dto.Data_playStore],fulldata: List[dto.Data_playStore])
+@main("Welcome to Play") {
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    </head>
+    <body>
+
+                <figure class="highcharts-figure">
+                    <h1>Content Rating vs Installs Graph</h1>
+                    <div id="bargraph"></div>
+                    <p class="highcharts-description">
+                        Chart showing use of rotated axis labels and data labels. This can be a
+                        way to include more labels in the chart, but note that more labels can
+                        sometimes make charts harder to read.
+                    </p>
+                </figure>
+            <h1 style="align:center"> Sample Graph </h1>
+
+            <div id="data" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+            <div class="container" align="center"
+                  style="border-style:solid; border-width:1px; margin:10% auto; width:1301px; background-color:dark">
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <h1>Top Apps havving Rating > 4.7 and reviews > 12000000 </h1>
+                    <tr>
+                    <th> App Nmae</th>
+                    <th> App Category</th>
+                    <th> Rating </th>
+                        <th> reviews </th>
+
+                      </tr>
+                @for(n <- topdata){
+                <tr>
+                    <td> @n.getApp</td>
+                    <td> @n.getCategory</td>
+                    <td> @n.getRating</td>
+                    <td> @n.getReviews</td>
+                </tr>
+                }
+    <!--tr and td'sss-->
+            </table>
+            <table class="table table-striped">
+                <h1>All data </h1>
+                <tr>
+                    <th> ID</th>
+                    <th> App Name</th>
+                    <th> Category</th>
+                </tr>
+                @for(n <- fulldata){
+                <tr>
+                    <td> @n.getId</td>
+                    <td> @n.getApp</td>
+                    <td> @n.getCategory</td>
+                </tr>
+                }
+                <!--tr and td'sss-->
+            </table>
+        </div>
+
+    </div>
+    <script>
+    $(document).ready(function(){
+        $.ajax({
+            url: '/datacontentratings',   <!-- url for saving-->
+            dataType: 'JSON',
+            type: "GET",
+            success: function (data) {
+                 showGraph(data.names, data.values);
+             },
+            error: function (data) {
+                console.log(" error"+ data);
+            }
+        });
+    });
+
+    function showGraph(jsonDataNames, jsonDataValues){
+        Highcharts.chart('bargraph', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Content Rating vs Installs Graph'
+            },
+            subtitle: {
+                text: 'Source: <a href="http://en.wikipedia.org/wiki/List_of_cities_proper_by_population">Google Play Store</a>'
+            },
+            xAxis: {
+                type: 'category',
+                categories: jsonDataNames,
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'No of Installations'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: 'Population in 2017: <b>{point.y:.1f} millions</b>'
+            },
+            series: [{
+                name: "values",
+                data: jsonDataValues,
+                dataLabels: {
+                    enabled: true,
+                    rotation: -90,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    format: '{point.y:.1f}', // one decimal
+                    y: 10, // 10 pixels down from the top
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Verdana, sans-serif'
+                    }
+                }
+            }]
+        });
+
+
+    }
+//////////////////////////////////////////////////////////
+        Highcharts.chart('data', {
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Monthly Average Temperature'
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com'
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Tokyo',
+            data: [15.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        }, {
+            name: 'London',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6]
+        }]
+    });
+    </script>
+    </body>
+</html>
+}

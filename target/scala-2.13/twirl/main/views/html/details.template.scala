@@ -40,31 +40,45 @@ Seq[Any](format.raw/*1.42*/("""
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-<div class="container">
-    <div class="container-fluid"   align="center" style="border-style:solid; border-width:1px; margin:10% auto; width:701px; background-color:lightgrey">
+<div class="container" align="center"
+     style="border-style:solid; border-width:1px; margin:10% auto; width:701px; background-color:dark">
 
-        <h1>Hi Admin </h1>
-        <h2> Please find the details of Attendance here</h2>
-        <br>
-        <table class="table">
+    <h1>Hi Admin </h1>
+    <h2> Please find the details of Attendance here</h2>
+    <br>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th> ID</th>
+                <th> Name</th>
+                <th> &nbsp &nbsp &nbsp Check-in Time</th>
+                <th> &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCheck-out Time</th>
+            </tr>
             <thead class="thead-dark">
-            <tr ><th > ID </th><th> Name </th><th> &nbsp &nbsp &nbsp Check-in Time</th><th> &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCheck-out Time</th></tr>
-            <thead class="thead-dark">
-            """),_display_(/*23.14*/for(n <- attendance) yield /*23.34*/{_display_(Seq[Any](format.raw/*23.35*/("""
-            """),format.raw/*24.13*/("""<tr><td> """),_display_(/*24.23*/n/*24.24*/.getId),format.raw/*24.30*/("""</td> <td> """),_display_(/*24.42*/n/*24.43*/.getName),format.raw/*24.51*/("""</td>   <td>  &nbsp """),_display_(/*24.72*/n/*24.73*/.getCheckIn),format.raw/*24.84*/("""</td>  <td>&nbsp &nbsp &nbsp """),_display_(/*24.114*/n/*24.115*/.getCheckOut),format.raw/*24.127*/("""</td></tr>
-            """)))}),format.raw/*25.14*/("""
-        """),format.raw/*26.9*/("""</table>
-        <div>
-            <input type="button" value="Return to previous page" class="btn btn-success" onclick="window.location.href = '/login';">
-            <br><br>
-        </div>
+            """),_display_(/*31.14*/for(n <- attendance) yield /*31.34*/{_display_(Seq[Any](format.raw/*31.35*/("""
+            """),format.raw/*32.13*/("""<tr>
+                <td> """),_display_(/*33.23*/n/*33.24*/.getId),format.raw/*33.30*/("""</td>
+                <td> """),_display_(/*34.23*/n/*34.24*/.getName),format.raw/*34.32*/("""</td>
+                <td> &nbsp """),_display_(/*35.29*/n/*35.30*/.getCheckIn),format.raw/*35.41*/("""</td>
+                <td>&nbsp &nbsp &nbsp """),_display_(/*36.40*/n/*36.41*/.getCheckOut),format.raw/*36.53*/("""</td>
+            </tr>
+            """)))}),format.raw/*38.14*/("""
+        """),format.raw/*39.9*/("""</table>
+    </div>
+    <div>
+        <input type="button" value="Return to previous page" class="btn btn-success"
+               onclick="window.location.href = '/login';">
+        <br><br>
     </div>
 </div>
 </body>
 </html>
-""")))}),format.raw/*35.2*/("""
+""")))}),format.raw/*49.2*/("""
 """))
       }
     }
@@ -81,11 +95,11 @@ Seq[Any](format.raw/*1.42*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-03T19:21:24.919
+                  DATE: 2019-12-09T17:48:27.653
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/details.scala.html
-                  HASH: adbb572c747f6eb4d6001b9996f5e928dc672c25
-                  MATRIX: 970->1|1105->41|1133->44|1164->67|1203->69|1231->71|2362->1175|2398->1195|2437->1196|2479->1210|2516->1220|2526->1221|2553->1227|2592->1239|2602->1240|2631->1248|2679->1269|2689->1270|2721->1281|2779->1311|2790->1312|2824->1324|2880->1349|2917->1359|3183->1595
-                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|55->23|55->23|55->23|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|56->24|57->25|58->26|67->35
+                  HASH: f251453f26ebbb24f42d783d3e4bdef4130cc481
+                  MATRIX: 970->1|1105->41|1133->44|1164->67|1203->69|1231->71|2431->1244|2467->1264|2506->1265|2548->1279|2603->1307|2613->1308|2640->1314|2696->1343|2706->1344|2735->1352|2797->1387|2807->1388|2839->1399|2912->1445|2922->1446|2955->1458|3025->1497|3062->1507|3328->1743
+                  LINES: 28->1|33->1|34->2|34->2|34->2|35->3|63->31|63->31|63->31|64->32|65->33|65->33|65->33|66->34|66->34|66->34|67->35|67->35|67->35|68->36|68->36|68->36|70->38|71->39|81->49
                   -- GENERATED --
               */
           

@@ -31,7 +31,6 @@ public class RegistrationControllerTest extends WithApplication {
         Http.RequestBuilder request = new Http.RequestBuilder()
                 .method(POST)
                 .uri("/register/login");
-
         Result result = route(app, request);
         assertEquals(OK, result.status());  //303 is the default HTTP code for  Redirect
     }

@@ -1,16 +1,14 @@
 package controllers;
 
 import dao.DbConnector;
-import dto.ApplicationForm;
-import dto.LoginForm;
-import dto.PasswordForm;
-import dto.RegistrationForm;
+import dto.*;
 import io.ebean.SqlRow;
 import models.Attendance;
 import models.Person;
 import play.Logger;
 import play.data.Form;
 import play.data.FormFactory;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Http;
 import play.mvc.Result;
@@ -36,22 +34,29 @@ public class LoginController extends Controller {
     }
 
     public Result saveLogin(Http.Request request) {
+        BaseResponse response = new BaseResponse();
         Form<LoginForm> loginForm = formFactory.form(LoginForm.class).bindFromRequest(request);
         if (loginForm.hasErrors()) {
-            return ok(views.html.login.render(" Kindly enter all details"));
+         //  return ok(views.html.login.render(" Kindly enter all details"));
+            response.setStatus(400);
+            response.setReason("Please dont leave any field blank");
+            return ok(Json.toJson(response));
         }
         LoginForm form;
         form = loginForm.get();
         String email = form.getEmail();
         String password = form.getPassword();
-
         //     List<SqlRow> objects = DbConnector.createSqlQuery("Select email,password from person WHERE email= ('" + email + "') AND password= ('" + password + "')  ").findList();
 //               List<Person> objects =DbConnector.find(Person.class).where().eq("email",email).
 //                     eq("password",password).findList();
         List<Person> objects = Person.find.query().select("email,password").where().eq("email", email).eq("password", password).findList();
         if (objects.isEmpty()) {
-            return ok(views.html.login.render("Invalid email or password"));
-        } else {
+            response.setStatus(200);
+            response.setReason("Invalid Email or password");
+            return ok(Json.toJson(response));
+            //return ok(views.html.login.render("Invalid email or password"));
+        }
+        else {
             //check in cache if the user is already logged in or not
 //            CompletionStage<Optional<String>> loggedInEmail =  cache.getOptional("email");
 //            String loggedInEmail =  cache.getOptional("email").toString();
@@ -61,15 +66,19 @@ public class LoginController extends Controller {
 //                cache.set("email", email, 60 * 3);
 //            }
             cache.set("cacheemail", email, 120 * 1);
-
-
-
            Person person=Person.find.query().where().like("email",email).findOne();
             if(person.getRole().getRole_id()==1){
-                return redirect("/persondetails").addingToSession(request, "sessionemail", email);
+
+                response.setStatus(200);
+                response.setReason("Admin Login successful");
+                return ok(Json.toJson(response)).addingToSession(request, "sessionemail", email);
+                //return redirect("/persondetails").addingToSession(request, "sessionemail", email);
             }else
             {
-            return redirect("/attendance").addingToSession(request, "sessionemail", email);
+             response.setStatus(200);
+             response.setReason("Employee Login Successful");
+             return ok(Json.toJson(response)).addingToSession(request, "sessionemail", email);
+           // return redirect("/attendance").addingToSession(request, "sessionemail", email);
         }
     }}
 

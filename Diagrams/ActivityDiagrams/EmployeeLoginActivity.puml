@@ -2,8 +2,10 @@
 title Employee login Activity Diagram
 (*) --> "Enter Email"
 If "Email is valid" then
--->  "Login"
-(*) --> "Enter Password"
+-->  "Enter Password"
+else
+--> "Enter Email"
+--> "Enter Password"
 If "password is valid" then
 -->  "Login"
 --> "Enter Email Again"

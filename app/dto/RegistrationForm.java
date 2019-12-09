@@ -19,10 +19,8 @@ public class RegistrationForm implements Validatable<String>
         if (StringUtils.isEmpty(email) || StringUtils.isEmpty(name) || StringUtils.isEmpty(password1) || StringUtils.isEmpty(password2)) {
             return "Invalid details";
         }
-        return null;
-    }
-
-
+        else{
+        return null;}}
     public String getEmail() {
         return email;
     }

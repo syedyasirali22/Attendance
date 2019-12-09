@@ -18,8 +18,9 @@ public class LoginForm implements Validatable<String>
         if (StringUtils.isEmpty(email)|| StringUtils.isEmpty(password)) {
             return "Invalid details";
         }
+        else{
         return null;
-    }
+    }}
     public String getEmail() {
         return email;
     }

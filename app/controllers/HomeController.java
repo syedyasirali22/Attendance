@@ -4,17 +4,12 @@ import dao.*;
 import dto.ApplicationForm;
 import dto.PasswordForm;
 import dto.PersonAttendance;
-import io.ebean.Expr;
-import io.ebean.SqlRow;
-import io.ebean.SqlUpdate;
-import jdk.nashorn.internal.runtime.Context;
 import models.*;
 import play.Logger;
 import play.cache.SyncCacheApi;
 import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.*;
-import scala.xml.factory.LoggedNodeFactory;
 
 import javax.inject.Inject;
 import java.time.LocalDate;
@@ -22,9 +17,6 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.Scanner;
-
 public class HomeController extends Controller {
     private FormFactory formFactory;
     private SyncCacheApi cache;

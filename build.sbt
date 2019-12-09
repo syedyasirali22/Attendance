@@ -9,5 +9,8 @@ libraryDependencies ++= Seq(guice,javaJdbc, "mysql" % "mysql-connector-java" % "
 libraryDependencies += javaForms
 libraryDependencies ++= Seq(
   ehcache,
-    "org.apache.commons" % "commons-io" % "1.3.2"
+    "org.apache.commons" % "commons-io" % "1.3.2",
+    "org.json" % "json" % "20190722"
 )
+
+//New dependency for jsonArray  "org.json" % "json" % "20190722"
