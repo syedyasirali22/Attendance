@@ -371,3 +371,4 @@ clean
 compile
 run
 exit
+run 9000

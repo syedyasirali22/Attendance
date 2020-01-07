@@ -98,7 +98,7 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-09T17:48:29.854
+                  DATE: 2020-01-06T13:22:33.535
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/HRindex.scala.html
                   HASH: 3c7f064224a1ebcdfd9b26de048d67e391bbc39a
                   MATRIX: 950->1|1063->19|1091->22|1122->45|1161->47|1189->49|2084->917|2100->924|2141->944|2640->1416|2669->1424|3231->1956

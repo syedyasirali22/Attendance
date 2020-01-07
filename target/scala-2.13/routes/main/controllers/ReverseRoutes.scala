@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Syed_Yasir_PlayProject/Attendance/attendance/conf/routes
-// @DATE:Mon Dec 09 19:08:38 IST 2019
+// @DATE:Mon Jan 06 13:22:30 IST 2020
 
 import play.api.mvc.Call
 
@@ -33,16 +33,40 @@ package controllers {
     }
 
   
-    // @LINE:36
-    def contentRating(): Call = {
+    // @LINE:38
+    def categoryrating(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "datacontentratings")
+      Call("GET", _prefix + { _defaultPrefix } + "categoryrating")
     }
   
     // @LINE:35
     def showPage(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "data")
+    }
+  
+    // @LINE:37
+    def categoryinstalls(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "categoryinstalls")
+    }
+  
+    // @LINE:36
+    def contentRating(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "datacontentratings")
+    }
+  
+    // @LINE:40
+    def mostinstalledApps(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "mostinstalledApps")
+    }
+  
+    // @LINE:39
+    def genresapp(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "genresapp")
     }
   
   }

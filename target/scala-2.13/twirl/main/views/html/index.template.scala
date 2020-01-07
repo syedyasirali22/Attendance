@@ -84,7 +84,7 @@ Seq[Any](format.raw/*1.20*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2019-12-09T17:48:29.954
+                  DATE: 2020-01-06T13:22:33.588
                   SOURCE: C:/Syed_Yasir_PlayProject/Attendance/attendance/app/views/index.scala.html
                   HASH: 136805db1ce9ad6cde0e74dccfdb5ccd4e474384
                   MATRIX: 948->1|1061->19|1089->22|1120->45|1159->47|1187->49|2038->873|2054->880|2095->900|2610->1388|2639->1396|2904->1631

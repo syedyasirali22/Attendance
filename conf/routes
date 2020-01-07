@@ -34,5 +34,7 @@ POST    /editdetails                   controllers.HomeController.edited(request
 
 GET      /data                             controllers.GooglePlayStoreController.showPage(request: Request)
 GET      /datacontentratings               controllers.GooglePlayStoreController.contentRating(request: Request)
-
-
+GET      /categoryinstalls               controllers.GooglePlayStoreController.categoryinstalls(request: Request)
+GET      /categoryrating               controllers.GooglePlayStoreController.categoryrating(request: Request)
+GET      /genresapp               controllers.GooglePlayStoreController.genresapp(request: Request)
+GET      /mostinstalledApps               controllers.GooglePlayStoreController.mostinstalledApps(request: Request)

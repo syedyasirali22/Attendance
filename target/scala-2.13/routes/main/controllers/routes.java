@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Syed_Yasir_PlayProject/Attendance/attendance/conf/routes
-// @DATE:Mon Dec 09 19:08:38 IST 2019
+// @DATE:Mon Jan 06 13:22:30 IST 2020
 
 package controllers;
 

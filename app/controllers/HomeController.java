@@ -78,7 +78,6 @@ public class HomeController extends Controller {
         if(uid==(person.getId()) && upassword.equals(person.getPassword()))
         {
             person.setName(uname);
-
             DbConnector.update(person);
            // Logger.info("reached " +femail+ fname);
             return ok(views.html.login.render("Updated Successfully "));}

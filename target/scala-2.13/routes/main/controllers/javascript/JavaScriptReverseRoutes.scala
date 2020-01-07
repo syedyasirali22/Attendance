@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Syed_Yasir_PlayProject/Attendance/attendance/conf/routes
-// @DATE:Mon Dec 09 19:08:38 IST 2019
+// @DATE:Mon Jan 06 13:22:30 IST 2020
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -39,12 +39,12 @@ package controllers.javascript {
     }
 
   
-    // @LINE:36
-    def contentRating: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.GooglePlayStoreController.contentRating",
+    // @LINE:38
+    def categoryrating: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GooglePlayStoreController.categoryrating",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "datacontentratings"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "categoryrating"})
         }
       """
     )
@@ -55,6 +55,46 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "data"})
+        }
+      """
+    )
+  
+    // @LINE:37
+    def categoryinstalls: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GooglePlayStoreController.categoryinstalls",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "categoryinstalls"})
+        }
+      """
+    )
+  
+    // @LINE:36
+    def contentRating: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GooglePlayStoreController.contentRating",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "datacontentratings"})
+        }
+      """
+    )
+  
+    // @LINE:40
+    def mostinstalledApps: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GooglePlayStoreController.mostinstalledApps",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "mostinstalledApps"})
+        }
+      """
+    )
+  
+    // @LINE:39
+    def genresapp: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.GooglePlayStoreController.genresapp",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "genresapp"})
         }
       """
     )

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Syed_Yasir_PlayProject/Attendance/attendance/conf/routes
-// @DATE:Mon Dec 09 19:08:38 IST 2019
+// @DATE:Mon Jan 06 13:22:30 IST 2020
 
 package router
 
@@ -71,6 +71,10 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """editdetails""", """controllers.HomeController.edited(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """data""", """controllers.GooglePlayStoreController.showPage(request:Request)"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """datacontentratings""", """controllers.GooglePlayStoreController.contentRating(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """categoryinstalls""", """controllers.GooglePlayStoreController.categoryinstalls(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """categoryrating""", """controllers.GooglePlayStoreController.categoryrating(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """genresapp""", """controllers.GooglePlayStoreController.genresapp(request:Request)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """mostinstalledApps""", """controllers.GooglePlayStoreController.mostinstalledApps(request:Request)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -448,6 +452,86 @@ class Routes(
     )
   )
 
+  // @LINE:37
+  private[this] lazy val controllers_GooglePlayStoreController_categoryinstalls19_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("categoryinstalls")))
+  )
+  private[this] lazy val controllers_GooglePlayStoreController_categoryinstalls19_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      GooglePlayStoreController_3.categoryinstalls(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.GooglePlayStoreController",
+      "categoryinstalls",
+      Seq(classOf[play.mvc.Http.Request]),
+      "GET",
+      this.prefix + """categoryinstalls""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:38
+  private[this] lazy val controllers_GooglePlayStoreController_categoryrating20_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("categoryrating")))
+  )
+  private[this] lazy val controllers_GooglePlayStoreController_categoryrating20_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      GooglePlayStoreController_3.categoryrating(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.GooglePlayStoreController",
+      "categoryrating",
+      Seq(classOf[play.mvc.Http.Request]),
+      "GET",
+      this.prefix + """categoryrating""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:39
+  private[this] lazy val controllers_GooglePlayStoreController_genresapp21_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("genresapp")))
+  )
+  private[this] lazy val controllers_GooglePlayStoreController_genresapp21_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      GooglePlayStoreController_3.genresapp(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.GooglePlayStoreController",
+      "genresapp",
+      Seq(classOf[play.mvc.Http.Request]),
+      "GET",
+      this.prefix + """genresapp""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:40
+  private[this] lazy val controllers_GooglePlayStoreController_mostinstalledApps22_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("mostinstalledApps")))
+  )
+  private[this] lazy val controllers_GooglePlayStoreController_mostinstalledApps22_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      GooglePlayStoreController_3.mostinstalledApps(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.GooglePlayStoreController",
+      "mostinstalledApps",
+      Seq(classOf[play.mvc.Http.Request]),
+      "GET",
+      this.prefix + """mostinstalledApps""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -577,6 +661,34 @@ class Routes(
       call { 
         controllers_GooglePlayStoreController_contentRating18_invoker.call(
           req => GooglePlayStoreController_3.contentRating(req))
+      }
+  
+    // @LINE:37
+    case controllers_GooglePlayStoreController_categoryinstalls19_route(params@_) =>
+      call { 
+        controllers_GooglePlayStoreController_categoryinstalls19_invoker.call(
+          req => GooglePlayStoreController_3.categoryinstalls(req))
+      }
+  
+    // @LINE:38
+    case controllers_GooglePlayStoreController_categoryrating20_route(params@_) =>
+      call { 
+        controllers_GooglePlayStoreController_categoryrating20_invoker.call(
+          req => GooglePlayStoreController_3.categoryrating(req))
+      }
+  
+    // @LINE:39
+    case controllers_GooglePlayStoreController_genresapp21_route(params@_) =>
+      call { 
+        controllers_GooglePlayStoreController_genresapp21_invoker.call(
+          req => GooglePlayStoreController_3.genresapp(req))
+      }
+  
+    // @LINE:40
+    case controllers_GooglePlayStoreController_mostinstalledApps22_route(params@_) =>
+      call { 
+        controllers_GooglePlayStoreController_mostinstalledApps22_invoker.call(
+          req => GooglePlayStoreController_3.mostinstalledApps(req))
       }
   }
 }
